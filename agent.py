@@ -14,7 +14,7 @@ def create_research_agent():
     """
     # 1. Initialize the LLM (llama-3.1-8b-instant via Groq)
     llm = ChatGroq(
-        model="llama-3.1-8b-instant",
+        model="llama3-groq-70b-8192-tool-use-preview",
         temperature=0,
         api_key=os.getenv("GROQ_API_KEY")
     )
